@@ -1,0 +1,34 @@
+{
+  "name": "simon-gatsby-gh-pages",
+  "version": "1.0.0",
+  "description": "GitHub Action for Gatsby and GH pages",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --noEmit && ncc build index.ts -o dist -m",
+    "test": "tsc --noEmit && jest --silent",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "Gatsby",
+    "GitHub Pages",
+    "GitHub Actions"
+  ],
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0",
+    "@actions/github": "^5.0.0",
+    "@actions/io": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "@typescript-eslint/types": "^4.0.0",
+    "@vercel/ncc": "^0.28.5",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^2.0.0",
+    "typescript": "^4.0.0"
+  }
+}

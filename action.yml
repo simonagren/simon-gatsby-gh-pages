@@ -23,6 +23,10 @@ inputs:
     description: "Builds your Gatsby site but skips publishing by setting it to `true`. Helpful for testing/debugging Workflows."
     required: false
     default: false
+  public-dir:
+    description: "The directory where your public folder is. This folder is used for the published content."
+    required: false
+    default: "./Public"
   working-dir:
     description: "The directory where your Gatsby source files are at. `gatsby build` will run from this directory."
     required: false

@@ -8,7 +8,7 @@ This GitHub Action will run `gatsby build` at the root of your repository and
 deploy it to GitHub Pages for you! Here's a basic workflow example:
 
 ```yml
-name: Gatsby Publish
+name: Simon Gatsby
 
 on:
   push:

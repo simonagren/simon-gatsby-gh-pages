@@ -60,10 +60,8 @@ async function run(): Promise<void> {
 
     const repo = `${github.context.repo.owner}/${deployRepo || github.context.repo.repo}`
     const repoURL = `https://${accessToken}@github.com/${repo}.git`
-    console.log('Ready to deploy your new shiny site!')
     console.log(`Deploying to repo: ${repo} and branch: ${deployBranch}`)
-    console.log('You can configure the deploy branch by setting the `deploy-branch` input for this action.')
-
+    
     await exec.exec(`git init`, [], { cwd: publicDir })
 
     const gitUserName = core.getInput('git-config-name') || github.context.actor
